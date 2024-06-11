@@ -1,4 +1,4 @@
-package datastructs.arrays.exercise;
+package algorithms.search;
 
 public class BinarySearch {
     public static int binarySearch(int[] arr, int target) {

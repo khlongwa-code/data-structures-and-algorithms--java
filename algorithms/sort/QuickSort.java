@@ -1,4 +1,4 @@
-package datastructs.arrays.exercise;
+package algorithms.sort;
 
 public class QuickSort {
 
