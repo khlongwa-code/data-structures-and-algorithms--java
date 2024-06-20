@@ -2,13 +2,13 @@ package algorithms.sort;
 
 public class QuickSort {
 
-    static void swap(int[] arr, int i, int j) {
+    private static void swap(int[] arr, int i, int j) {
         int temp = arr[i];
         arr[i] = arr[j];
         arr[j] = temp;
     }
     
-    static int partition(int[] arr, int lowIndex, int highIndex) {
+    private static int partition(int[] arr, int lowIndex, int highIndex) {
         int pivot = arr[highIndex];
 
         int i = (lowIndex - 1);
@@ -24,7 +24,7 @@ public class QuickSort {
         return i + 1;
     }
 
-    public static void quickSort(int[] arr, int lowIndex, int highIndex) {
+    private static void quickSort(int[] arr, int lowIndex, int highIndex) {
         if (lowIndex < highIndex) {
             int partitionIndex = partition(arr, lowIndex, highIndex);
             quickSort(arr, lowIndex, partitionIndex - 1);
@@ -32,7 +32,7 @@ public class QuickSort {
         }
     }
 
-    public static void displaySortedArray(int[] arr) {
+    private static void displaySortedArray(int[] arr) {
         for (int element: arr) {
             System.out.print(element + " ");
         }

@@ -4,7 +4,7 @@ import java.util.Arrays;
 
 public class InsertionSort {
 
-    public static void instertionSort(int[] arr) {
+    private static void instertionSort(int[] arr) {
 
         for (int i = 1; i < arr.length; i++) {
             int temp = arr[i];
