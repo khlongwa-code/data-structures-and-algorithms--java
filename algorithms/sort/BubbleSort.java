@@ -23,9 +23,6 @@ public class BubbleSort {
     public static void bubbleSort(int[] arr) {
         int count = 0;
         for (int i = 0; i < arr.length - 1; i++) {
-            count++;
-            System.out.println("count " + count);
-            System.out.println("arr " + Arrays.toString(arr) );
             
             for (int j = 0; j < arr.length - i - 1; j++) {
                 if (arr[j] > arr[j + 1]) {
